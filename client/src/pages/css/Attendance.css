@@ -1,0 +1,113 @@
+/* General container styling */
+.attendance-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    height: 100vh; /* Ensure the container fills the entire viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    margin-top: 100px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .year-dropdown {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Wrapper for enabling horizontal scrolling */
+  .table-wrapper {
+    width: 100%;
+    overflow: auto; /* Allow horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    margin-bottom: 20px; /* Adds space below the table */
+  }
+  
+  /* Table styling */
+  .sheet-table {
+    min-width: 800px; /* Minimum width ensures a horizontal scroll will appear when content overflows */
+    width: 100%; /* Ensure the table stretches to the full width */
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Space between content and table */
+    margin-bottom: 20px; /* Space between table and footer */
+  }
+  
+  /* Table headers and cells */
+  .sheet-table th,
+  .sheet-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  /* Table headers */
+  .sheet-table th {
+    background-color: #4CAF50;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  /* Table data cells */
+  .sheet-table td {
+    font-size: 0.9rem;
+    color: #555;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Highlight alternating rows */
+  .sheet-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .sheet-table tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  /* Hover effect for rows */
+  .sheet-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .sheet-table {
+      font-size: 0.8rem; /* Adjust font size */
+    }
+  
+    .sheet-table th,
+    .sheet-table td {
+      padding: 8px; /* Reduce padding for smaller screens */
+    }
+  }
+  
+  /* Loading message */
+  .sheet-data p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

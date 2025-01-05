@@ -1,0 +1,23 @@
+import React from 'react';
+import { Navigate } from 'react-router-dom';
+
+const PrivateRoute = ({ children, allowedRoles }) => {
+  // Fetch token and role from local storage
+  const token = localStorage.getItem('token');  // JWT token
+  const userRole = localStorage.getItem('role'); // User role (e.g., student, faculty, admin, etc.)
+
+  if (!token) {
+    // Redirect to login if no token is found
+    return <Navigate to="/login" replace />;
+  }
+
+  if (!allowedRoles.includes(userRole)) {
+    // Redirect to unauthorized if role mismatch
+    return <Navigate to="/unauthorized" replace />;
+  }
+
+  // Render the protected child component
+  return children;
+};
+
+export default PrivateRoute;

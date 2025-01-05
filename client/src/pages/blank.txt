@@ -1,0 +1,36 @@
+{/* Features Section */}
+      <section className="features">
+        <h2>Our Features</h2>
+        <div className="feature-grid">
+          <div className="feature-item">
+            <i className="feature-icon">🌟</i>
+            <h3>Quality Content</h3>
+            <p>Curated information for your needs</p>
+          </div>
+          <div className="feature-item">
+            <i className="feature-icon">🚀</i>
+            <h3>Fast Service</h3>
+            <p>Quick and efficient solutions</p>
+          </div>
+          <div className="feature-item">
+            <i className="feature-icon">🤝</i>
+            <h3>24/7 Support</h3>
+            <p>Always here when you need us</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="contact">
+        <h2>Contact Us</h2>
+        <div className="contact-content">
+          <div className="contact-info">
+            <p>Reach out to us anytime:</p>
+            <p><strong>Email:</strong> info@example.com</p>
+            <p><strong>Phone:</strong> +1 123-456-7890</p>
+          </div>
+          <div className="contact-image">
+            <img src={images[2]} alt="Contact Us" />
+          </div>
+        </div>
+      </section>

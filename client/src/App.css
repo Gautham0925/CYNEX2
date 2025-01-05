@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.App-logo:hover {
+  transform: scale(1.1); /* Slightly scale the logo on hover for better interaction */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.App-link:hover {
+  color: #565b5e2f; /* Change color on hover for better visibility */
+}
+
+/* Keyframes for logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(12px + 2vmin); /* Adjust font size for smaller screens */
+    padding: 10px; /* Less padding on smaller screens */
+  }
+
+  .App-logo {
+    height: 30vmin; /* Reduce logo size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-logo {
+    height: 25vmin; /* Further reduce logo size for mobile */
+  }
+
+  .App-header {
+    font-size: calc(14px + 2vmin); /* Adjust font size for mobile */
+  }
+}

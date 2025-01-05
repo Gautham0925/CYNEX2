@@ -1,0 +1,16 @@
+/* src/index.css */
+body {
+  background-color: #f0f0f0;  /* Light gray background */
+  font-family: 'Arial', sans-serif;  /* Set the font style */
+  color: #333;  /* Text color */
+  margin: 0;  /* Remove default margin */
+  padding: 0;  /* Remove default padding */
+  display: flex;
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;  /* Center content vertically */
+  height: 100vh;  /* Take full height of the viewport */
+}
+
+h1 {
+  color: #000000;  /* Blue color for headings */
+}

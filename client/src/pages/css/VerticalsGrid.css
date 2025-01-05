@@ -1,0 +1,103 @@
+/* Container for the entire grid */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between groups */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width and height */
+}
+
+/* Container for each group */
+.group-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between title and items */
+}
+
+/* Add top margin above the first group */
+.group-container:first-child {
+  margin-top: 3000px; /* Adjust this value for desired spacing */
+}
+
+/* Group title styling */
+.group-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Grid for items within a group */
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the 150px value for minimum width */
+  gap: 20px;
+}
+
+/* Styling for each item */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+
+/* Small screens */
+@media (max-width: 599px) {
+  .group-container:first-child {
+    margin-top: 4450px; /* Adjust this value for small screens */
+  }
+
+  .group-grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjust for 2 columns on small screens */
+  }
+}
+
+/* Medium screens */
+@media (min-width: 600px) {
+  .group-container:first-child {
+    margin-top: 3400px; /* Adjust this value for medium screens */
+  }
+
+  .group-grid {
+    grid-template-columns: repeat(3, 1fr); /* Adjust for 3 columns on medium screens */
+  }
+}
+
+/* Large screens */
+@media (min-width: 900px) {
+  .group-container:first-child {
+    margin-top: 1450px; /* Adjust this value for large screens */
+  }
+
+  .group-grid {
+    grid-template-columns: repeat(5, 1fr); /* Adjust for 5 columns on large screens */
+  }
+}
+
+/* Extra-large screens */
+@media (min-width: 1200px) {
+  .group-container:first-child {
+    margin-top: 1950px; /* Adjust this value for extra-large screens */
+  }
+
+  .group-grid {
+    grid-template-columns: repeat(6, 1fr); /* Adjust for 6 columns on extra-large screens */
+  }
+}
