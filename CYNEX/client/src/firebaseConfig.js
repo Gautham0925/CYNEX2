@@ -2,8 +2,8 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD0Xt2yO-dfC1_OHCdhayfmI9gcxG8gnS4",
-  authDomain: "trail-a1c12.firebaseapp.com",
+  apiKey: "API KEY",
+  authDomain: "Domain",
   projectId: "trail-a1c12",
   storageBucket: "trail-a1c12.appspot.com", // Corrected storage bucket
   messagingSenderId: "854054008202",
